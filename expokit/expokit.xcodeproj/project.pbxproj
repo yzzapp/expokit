@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E1D8CBC171E9809004EE31F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D8CBB171E9809004EE31F /* UIKit.framework */; };
+		2E1D8CBE171E9809004EE31F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D8CBD171E9809004EE31F /* Foundation.framework */; };
+		2E1D8CC0171E9809004EE31F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1D8CBF171E9809004EE31F /* CoreGraphics.framework */; };
+		2E1D8CC6171E9809004EE31F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D8CC4171E9809004EE31F /* InfoPlist.strings */; };
+		2E1D8CC8171E9809004EE31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D8CC7171E9809004EE31F /* main.m */; };
+		2E1D8CCC171E9809004EE31F /* YZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D8CCB171E9809004EE31F /* YZZAppDelegate.m */; };
+		2E1D8CCE171E9809004EE31F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D8CCD171E9809004EE31F /* Default.png */; };
+		2E1D8CD0171E9809004EE31F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D8CCF171E9809004EE31F /* Default@2x.png */; };
+		2E1D8CD2171E9809004EE31F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D8CD1171E9809004EE31F /* Default-568h@2x.png */; };
+		2E1D8CD5171E9809004EE31F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D8CD3171E9809004EE31F /* MainStoryboard.storyboard */; };
+		2E1D8CD8171E9809004EE31F /* YZZHotelPubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D8CD7171E9809004EE31F /* YZZHotelPubVC.m */; };
+		2E22FA621725A8A10016C528 /* expo_bj_hotels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E22FA5D1725A8A10016C528 /* expo_bj_hotels.txt */; };
+		2E22FA631725A8A10016C528 /* expo_cd_hotels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E22FA5E1725A8A10016C528 /* expo_cd_hotels.txt */; };
+		2E22FA641725A8A10016C528 /* expo_gz_hotels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E22FA5F1725A8A10016C528 /* expo_gz_hotels.txt */; };
+		2E22FA651725A8A10016C528 /* expo_sh_hotels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E22FA601725A8A10016C528 /* expo_sh_hotels.txt */; };
+		2E22FA661725A8A10016C528 /* expo_sz_hotels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E22FA611725A8A10016C528 /* expo_sz_hotels.txt */; };
+		2E3755A917337B92005FCEDF /* YZZR_H_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3755A817337B92005FCEDF /* YZZR_H_Model.m */; };
+		2E3A3EEA172A8510001BE2D1 /* YZZMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A3EE9172A8510001BE2D1 /* YZZMenuVC.m */; };
+		2E3A3EEC172A90BC001BE2D1 /* extrip57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A3EEB172A90BC001BE2D1 /* extrip57.png */; };
+		2E3A3EEE172A90C1001BE2D1 /* extrip114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A3EED172A90C1001BE2D1 /* extrip114.png */; };
+		2E8F77391724153A001B78BD /* YZZDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F77381724153A001B78BD /* YZZDatabase.m */; };
+		2E8F773D17242AC4001B78BD /* expo2013.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F773C17242AC4001B78BD /* expo2013.sqlite3 */; };
+		2E8F773F1724C240001B78BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8F773E1724C23F001B78BD /* CoreLocation.framework */; };
+		2E8F77421724C278001B78BD /* OTA_HotelSearchRes_BEIJING.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F77411724C278001B78BD /* OTA_HotelSearchRes_BEIJING.txt */; };
+		2E8F774E1724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F77471724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E8F774F1724C4C0001B78BD /* OTA_HotelRatePlanSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F77491724C4C0001B78BD /* OTA_HotelRatePlanSudzc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E8F77501724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F774B1724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E8F77511724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F774D1724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2E8F77541724C4E7001B78BD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F77531724C4E7001B78BD /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2EAE04B9172263C600C60737 /* YZZUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE04B8172263C600C60737 /* YZZUtil.m */; };
+		2EC23C2B1720654C00DB245A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC23C2A1720654C00DB245A /* libsqlite3.dylib */; };
+		2EDE40D4172F85F6002698FA /* YZZHotelDownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE40D3172F85F6002698FA /* YZZHotelDownloadVC.m */; };
+		2EF8DEC61721A602001A99F1 /* YZZMd5VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8DEC51721A602001A99F1 /* YZZMd5VC.m */; };
+		B2B8DFBB1721B03C00366414 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DF9F1721B03C00366414 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFBC1721B03C00366414 /* NSMutableArray+Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFA11721B03C00366414 /* NSMutableArray+Soap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFBD1721B03C00366414 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFA31721B03C00366414 /* Soap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFBE1721B03C00366414 /* SoapArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFA51721B03C00366414 /* SoapArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFBF1721B03C00366414 /* SoapDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFA81721B03C00366414 /* SoapDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC01721B03C00366414 /* SoapFault.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFAA1721B03C00366414 /* SoapFault.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC11721B03C00366414 /* SoapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFAC1721B03C00366414 /* SoapHandler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC21721B03C00366414 /* SoapLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFAE1721B03C00366414 /* SoapLiteral.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC31721B03C00366414 /* SoapNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFB01721B03C00366414 /* SoapNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC41721B03C00366414 /* SoapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFB21721B03C00366414 /* SoapObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC51721B03C00366414 /* SoapParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFB41721B03C00366414 /* SoapParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC61721B03C00366414 /* SoapReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFB61721B03C00366414 /* SoapReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC71721B03C00366414 /* SoapRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFB81721B03C00366414 /* SoapRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFC81721B03C00366414 /* SoapService.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFBA1721B03C00366414 /* SoapService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFD01721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFCB1721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFD11721B07C00366414 /* OTA_HotelSearchSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFCD1721B07C00366414 /* OTA_HotelSearchSudzc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFD21721B07C00366414 /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFCF1721B07C00366414 /* Soap+Prefix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE11721B5D400366414 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFD51721B5D400366414 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE21721B5D400366414 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFD71721B5D400366414 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE31721B5D400366414 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFD91721B5D400366414 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE41721B5D400366414 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFDB1721B5D400366414 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE51721B5D400366414 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFDD1721B5D400366414 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE61721B5D400366414 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFDF1721B5D400366414 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFE81721B66600366414 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B8DFE71721B66600366414 /* libxml2.dylib */; };
+		B2B8DFEA1721B93F00366414 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B8DFE91721B93E00366414 /* CFNetwork.framework */; };
+		B2B8DFEC1721B95A00366414 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B8DFEB1721B95A00366414 /* SystemConfiguration.framework */; };
+		B2B8DFF21721BDB400366414 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFEF1721BDB400366414 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFF31721BDB400366414 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFF11721BDB400366414 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFF817223A3400366414 /* OTA_PingOTA_Ping.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFF517223A3400366414 /* OTA_PingOTA_Ping.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B2B8DFF917223A3400366414 /* OTA_PingSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B8DFF717223A3400366414 /* OTA_PingSudzc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC2D30E01739459100F7B082 /* city_location.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC2D30DF1739459100F7B082 /* city_location.txt */; };
+		EC9BB79F17373BA400FABEF0 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB78817373BA400FABEF0 /* NSData+MKBase64.m */; };
+		EC9BB7A017373BA400FABEF0 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB78A17373BA400FABEF0 /* NSDate+RFC1123.m */; };
+		EC9BB7A117373BA400FABEF0 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB78C17373BA400FABEF0 /* NSDictionary+RequestEncoding.m */; };
+		EC9BB7A217373BA400FABEF0 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB78E17373BA400FABEF0 /* NSString+MKNetworkKitAdditions.m */; };
+		EC9BB7A317373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79017373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		EC9BB7A417373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79217373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.m */; };
+		EC9BB7A517373BA400FABEF0 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79517373BA400FABEF0 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC9BB7A617373BA400FABEF0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EC9BB79617373BA400FABEF0 /* README.md */; };
+		EC9BB7A717373BA400FABEF0 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79817373BA400FABEF0 /* MKNetworkEngine.m */; };
+		EC9BB7A817373BA400FABEF0 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79B17373BA400FABEF0 /* MKNetworkOperation.m */; };
+		EC9BB7A917373BA400FABEF0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB79E17373BA400FABEF0 /* Reachability.m */; };
+		EC9BB7AB17373BC200FABEF0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9BB7AA17373BC200FABEF0 /* Security.framework */; };
+		EC9BB7B017373C4C00FABEF0 /* YZZDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB7AD17373C4C00FABEF0 /* YZZDataHelper.m */; };
+		EC9BB7B117373C4C00FABEF0 /* YZZEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9BB7AF17373C4C00FABEF0 /* YZZEngine.m */; };
+		ECA2160717382310007423EC /* YZZPlaneDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2160617382310007423EC /* YZZPlaneDataVC.m */; };
+		ECA2160A17382320007423EC /* YZZPlanePubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2160917382320007423EC /* YZZPlanePubVC.m */; };
+		ECA2160F17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2160C17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ECA2161017382492007423EC /* OTA_FlightSearchSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2160E17382492007423EC /* OTA_FlightSearchSudzc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E1D8CBB171E9809004EE31F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E1D8CBD171E9809004EE31F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E1D8CBF171E9809004EE31F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E1D8CC3171E9809004EE31F /* expokit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "expokit-Info.plist"; sourceTree = "<group>"; };
+		2E1D8CC5171E9809004EE31F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E1D8CC7171E9809004EE31F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E1D8CC9171E9809004EE31F /* expokit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "expokit-Prefix.pch"; sourceTree = "<group>"; };
+		2E1D8CCA171E9809004EE31F /* YZZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZAppDelegate.h; sourceTree = "<group>"; };
+		2E1D8CCB171E9809004EE31F /* YZZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZZAppDelegate.m; sourceTree = "<group>"; };
+		2E1D8CCD171E9809004EE31F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2E1D8CCF171E9809004EE31F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2E1D8CD1171E9809004EE31F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2E1D8CD4171E9809004EE31F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2E1D8CD6171E9809004EE31F /* YZZHotelPubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZZHotelPubVC.h; sourceTree = "<group>"; };
+		2E1D8CD7171E9809004EE31F /* YZZHotelPubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZZHotelPubVC.m; sourceTree = "<group>"; };
+		2E22FA5D1725A8A10016C528 /* expo_bj_hotels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expo_bj_hotels.txt; sourceTree = "<group>"; };
+		2E22FA5E1725A8A10016C528 /* expo_cd_hotels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expo_cd_hotels.txt; sourceTree = "<group>"; };
+		2E22FA5F1725A8A10016C528 /* expo_gz_hotels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expo_gz_hotels.txt; sourceTree = "<group>"; };
+		2E22FA601725A8A10016C528 /* expo_sh_hotels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expo_sh_hotels.txt; sourceTree = "<group>"; };
+		2E22FA611725A8A10016C528 /* expo_sz_hotels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expo_sz_hotels.txt; sourceTree = "<group>"; };
+		2E3755A717337B92005FCEDF /* YZZR_H_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZR_H_Model.h; sourceTree = "<group>"; };
+		2E3755A817337B92005FCEDF /* YZZR_H_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZR_H_Model.m; sourceTree = "<group>"; };
+		2E3A3EE8172A8510001BE2D1 /* YZZMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZMenuVC.h; sourceTree = "<group>"; };
+		2E3A3EE9172A8510001BE2D1 /* YZZMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZMenuVC.m; sourceTree = "<group>"; };
+		2E3A3EEB172A90BC001BE2D1 /* extrip57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = extrip57.png; path = ../extrip57.png; sourceTree = "<group>"; };
+		2E3A3EED172A90C1001BE2D1 /* extrip114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = extrip114.png; path = ../extrip114.png; sourceTree = "<group>"; };
+		2E48889F174CECA800135517 /* expokit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expokit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8F77371724153A001B78BD /* YZZDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZDatabase.h; sourceTree = "<group>"; };
+		2E8F77381724153A001B78BD /* YZZDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZDatabase.m; sourceTree = "<group>"; };
+		2E8F773C17242AC4001B78BD /* expo2013.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = expo2013.sqlite3; sourceTree = "<group>"; };
+		2E8F773E1724C23F001B78BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E8F77411724C278001B78BD /* OTA_HotelSearchRes_BEIJING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OTA_HotelSearchRes_BEIJING.txt; sourceTree = "<group>"; };
+		2E8F77461724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelRatePlanOTA_HotelRatePlan.h; sourceTree = "<group>"; };
+		2E8F77471724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelRatePlanOTA_HotelRatePlan.m; sourceTree = "<group>"; };
+		2E8F77481724C4C0001B78BD /* OTA_HotelRatePlanSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelRatePlanSudzc.h; sourceTree = "<group>"; };
+		2E8F77491724C4C0001B78BD /* OTA_HotelRatePlanSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelRatePlanSudzc.m; sourceTree = "<group>"; };
+		2E8F774A1724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.h; sourceTree = "<group>"; };
+		2E8F774B1724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m; sourceTree = "<group>"; };
+		2E8F774C1724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelDescriptiveInfoSudzc.h; sourceTree = "<group>"; };
+		2E8F774D1724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelDescriptiveInfoSudzc.m; sourceTree = "<group>"; };
+		2E8F77521724C4E7001B78BD /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		2E8F77531724C4E7001B78BD /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		2EAE04B7172263C600C60737 /* YZZUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZUtil.h; sourceTree = "<group>"; };
+		2EAE04B8172263C600C60737 /* YZZUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZUtil.m; sourceTree = "<group>"; };
+		2EC23C2A1720654C00DB245A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2EDE40D2172F85F6002698FA /* YZZHotelDownloadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZHotelDownloadVC.h; sourceTree = "<group>"; };
+		2EDE40D3172F85F6002698FA /* YZZHotelDownloadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZHotelDownloadVC.m; sourceTree = "<group>"; };
+		2EF8DEC41721A602001A99F1 /* YZZMd5VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZMd5VC.h; sourceTree = "<group>"; };
+		2EF8DEC51721A602001A99F1 /* YZZMd5VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZMd5VC.m; sourceTree = "<group>"; };
+		B2B8DF9E1721B03C00366414 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B2B8DF9F1721B03C00366414 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B2B8DFA01721B03C00366414 /* NSMutableArray+Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Soap.h"; sourceTree = "<group>"; };
+		B2B8DFA11721B03C00366414 /* NSMutableArray+Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Soap.m"; sourceTree = "<group>"; };
+		B2B8DFA21721B03C00366414 /* Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soap.h; sourceTree = "<group>"; };
+		B2B8DFA31721B03C00366414 /* Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soap.m; sourceTree = "<group>"; };
+		B2B8DFA41721B03C00366414 /* SoapArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapArray.h; sourceTree = "<group>"; };
+		B2B8DFA51721B03C00366414 /* SoapArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapArray.m; sourceTree = "<group>"; };
+		B2B8DFA61721B03C00366414 /* SoapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDelegate.h; sourceTree = "<group>"; };
+		B2B8DFA71721B03C00366414 /* SoapDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDictionary.h; sourceTree = "<group>"; };
+		B2B8DFA81721B03C00366414 /* SoapDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapDictionary.m; sourceTree = "<group>"; };
+		B2B8DFA91721B03C00366414 /* SoapFault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapFault.h; sourceTree = "<group>"; };
+		B2B8DFAA1721B03C00366414 /* SoapFault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapFault.m; sourceTree = "<group>"; };
+		B2B8DFAB1721B03C00366414 /* SoapHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapHandler.h; sourceTree = "<group>"; };
+		B2B8DFAC1721B03C00366414 /* SoapHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapHandler.m; sourceTree = "<group>"; };
+		B2B8DFAD1721B03C00366414 /* SoapLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapLiteral.h; sourceTree = "<group>"; };
+		B2B8DFAE1721B03C00366414 /* SoapLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapLiteral.m; sourceTree = "<group>"; };
+		B2B8DFAF1721B03C00366414 /* SoapNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapNil.h; sourceTree = "<group>"; };
+		B2B8DFB01721B03C00366414 /* SoapNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapNil.m; sourceTree = "<group>"; };
+		B2B8DFB11721B03C00366414 /* SoapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapObject.h; sourceTree = "<group>"; };
+		B2B8DFB21721B03C00366414 /* SoapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapObject.m; sourceTree = "<group>"; };
+		B2B8DFB31721B03C00366414 /* SoapParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapParameter.h; sourceTree = "<group>"; };
+		B2B8DFB41721B03C00366414 /* SoapParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapParameter.m; sourceTree = "<group>"; };
+		B2B8DFB51721B03C00366414 /* SoapReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapReachability.h; sourceTree = "<group>"; };
+		B2B8DFB61721B03C00366414 /* SoapReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapReachability.m; sourceTree = "<group>"; };
+		B2B8DFB71721B03C00366414 /* SoapRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapRequest.h; sourceTree = "<group>"; };
+		B2B8DFB81721B03C00366414 /* SoapRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapRequest.m; sourceTree = "<group>"; };
+		B2B8DFB91721B03C00366414 /* SoapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapService.h; sourceTree = "<group>"; };
+		B2B8DFBA1721B03C00366414 /* SoapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapService.m; sourceTree = "<group>"; };
+		B2B8DFCA1721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelSearchOTA_HotelSearch.h; sourceTree = "<group>"; };
+		B2B8DFCB1721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelSearchOTA_HotelSearch.m; sourceTree = "<group>"; };
+		B2B8DFCC1721B07C00366414 /* OTA_HotelSearchSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_HotelSearchSudzc.h; sourceTree = "<group>"; };
+		B2B8DFCD1721B07C00366414 /* OTA_HotelSearchSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_HotelSearchSudzc.m; sourceTree = "<group>"; };
+		B2B8DFCE1721B07C00366414 /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
+		B2B8DFCF1721B07C00366414 /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
+		B2B8DFD41721B5D400366414 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		B2B8DFD51721B5D400366414 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		B2B8DFD61721B5D400366414 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		B2B8DFD71721B5D400366414 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		B2B8DFD81721B5D400366414 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		B2B8DFD91721B5D400366414 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		B2B8DFDA1721B5D400366414 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		B2B8DFDB1721B5D400366414 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		B2B8DFDC1721B5D400366414 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		B2B8DFDD1721B5D400366414 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		B2B8DFDE1721B5D400366414 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		B2B8DFDF1721B5D400366414 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		B2B8DFE01721B5D400366414 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		B2B8DFE71721B66600366414 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B2B8DFE91721B93E00366414 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2B8DFEB1721B95A00366414 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2B8DFEE1721BDB400366414 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		B2B8DFEF1721BDB400366414 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		B2B8DFF01721BDB400366414 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		B2B8DFF11721BDB400366414 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		B2B8DFF417223A3400366414 /* OTA_PingOTA_Ping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_PingOTA_Ping.h; sourceTree = "<group>"; };
+		B2B8DFF517223A3400366414 /* OTA_PingOTA_Ping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_PingOTA_Ping.m; sourceTree = "<group>"; };
+		B2B8DFF617223A3400366414 /* OTA_PingSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_PingSudzc.h; sourceTree = "<group>"; };
+		B2B8DFF717223A3400366414 /* OTA_PingSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_PingSudzc.m; sourceTree = "<group>"; };
+		EC2D30DF1739459100F7B082 /* city_location.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city_location.txt; sourceTree = "<group>"; };
+		EC9BB78717373BA400FABEF0 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		EC9BB78817373BA400FABEF0 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		EC9BB78917373BA400FABEF0 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		EC9BB78A17373BA400FABEF0 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		EC9BB78B17373BA400FABEF0 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		EC9BB78C17373BA400FABEF0 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		EC9BB78D17373BA400FABEF0 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		EC9BB78E17373BA400FABEF0 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		EC9BB78F17373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		EC9BB79017373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		EC9BB79117373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		EC9BB79217373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		EC9BB79417373BA400FABEF0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		EC9BB79517373BA400FABEF0 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		EC9BB79617373BA400FABEF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EC9BB79717373BA400FABEF0 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		EC9BB79817373BA400FABEF0 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		EC9BB79917373BA400FABEF0 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		EC9BB79A17373BA400FABEF0 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		EC9BB79B17373BA400FABEF0 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		EC9BB79D17373BA400FABEF0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EC9BB79E17373BA400FABEF0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EC9BB7AA17373BC200FABEF0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EC9BB7AC17373C4C00FABEF0 /* YZZDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZDataHelper.h; sourceTree = "<group>"; };
+		EC9BB7AD17373C4C00FABEF0 /* YZZDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZDataHelper.m; sourceTree = "<group>"; };
+		EC9BB7AE17373C4C00FABEF0 /* YZZEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZEngine.h; sourceTree = "<group>"; };
+		EC9BB7AF17373C4C00FABEF0 /* YZZEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZEngine.m; sourceTree = "<group>"; };
+		ECA2160517382310007423EC /* YZZPlaneDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZPlaneDataVC.h; sourceTree = "<group>"; };
+		ECA2160617382310007423EC /* YZZPlaneDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZPlaneDataVC.m; sourceTree = "<group>"; };
+		ECA2160817382320007423EC /* YZZPlanePubVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZZPlanePubVC.h; sourceTree = "<group>"; };
+		ECA2160917382320007423EC /* YZZPlanePubVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZZPlanePubVC.m; sourceTree = "<group>"; };
+		ECA2160B17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_FlightSearchOTA_FlightSearch.h; sourceTree = "<group>"; };
+		ECA2160C17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_FlightSearchOTA_FlightSearch.m; sourceTree = "<group>"; };
+		ECA2160D17382492007423EC /* OTA_FlightSearchSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTA_FlightSearchSudzc.h; sourceTree = "<group>"; };
+		ECA2160E17382492007423EC /* OTA_FlightSearchSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTA_FlightSearchSudzc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1D8CB5171E9809004EE31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9BB7AB17373BC200FABEF0 /* Security.framework in Frameworks */,
+				2E8F773F1724C240001B78BD /* CoreLocation.framework in Frameworks */,
+				B2B8DFEC1721B95A00366414 /* SystemConfiguration.framework in Frameworks */,
+				B2B8DFEA1721B93F00366414 /* CFNetwork.framework in Frameworks */,
+				B2B8DFE81721B66600366414 /* libxml2.dylib in Frameworks */,
+				2EC23C2B1720654C00DB245A /* libsqlite3.dylib in Frameworks */,
+				2E1D8CBC171E9809004EE31F /* UIKit.framework in Frameworks */,
+				2E1D8CBE171E9809004EE31F /* Foundation.framework in Frameworks */,
+				2E1D8CC0171E9809004EE31F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1D8CAF171E9809004EE31F = {
+			isa = PBXGroup;
+			children = (
+				2E1D8CC1171E9809004EE31F /* expokit */,
+				2E1D8CBA171E9809004EE31F /* Frameworks */,
+				2E48889F174CECA800135517 /* expokit.app */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1D8CBA171E9809004EE31F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB7AA17373BC200FABEF0 /* Security.framework */,
+				2E8F773E1724C23F001B78BD /* CoreLocation.framework */,
+				B2B8DFEB1721B95A00366414 /* SystemConfiguration.framework */,
+				B2B8DFE91721B93E00366414 /* CFNetwork.framework */,
+				B2B8DFE71721B66600366414 /* libxml2.dylib */,
+				2EC23C2A1720654C00DB245A /* libsqlite3.dylib */,
+				2E1D8CBB171E9809004EE31F /* UIKit.framework */,
+				2E1D8CBD171E9809004EE31F /* Foundation.framework */,
+				2E1D8CBF171E9809004EE31F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E1D8CC1171E9809004EE31F /* expokit */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D8CCA171E9809004EE31F /* YZZAppDelegate.h */,
+				2E1D8CCB171E9809004EE31F /* YZZAppDelegate.m */,
+				2E1D8CD3171E9809004EE31F /* MainStoryboard.storyboard */,
+				2E8F77301723DCE0001B78BD /* VC */,
+				B2B8DFC91721B07C00366414 /* Model_Generated */,
+				2E8F77311723DCEE001B78BD /* Util */,
+				2E8F77401724C264001B78BD /* TestDrivenData */,
+				2E1D8CC2171E9809004EE31F /* Supporting Files */,
+			);
+			name = expokit;
+			path = exotrip;
+			sourceTree = "<group>";
+		};
+		2E1D8CC2171E9809004EE31F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F773C17242AC4001B78BD /* expo2013.sqlite3 */,
+				EC2D30DF1739459100F7B082 /* city_location.txt */,
+				2E3A3EED172A90C1001BE2D1 /* extrip114.png */,
+				2E3A3EEB172A90BC001BE2D1 /* extrip57.png */,
+				2E1D8CC3171E9809004EE31F /* expokit-Info.plist */,
+				2E1D8CC4171E9809004EE31F /* InfoPlist.strings */,
+				2E1D8CC7171E9809004EE31F /* main.m */,
+				2E1D8CC9171E9809004EE31F /* expokit-Prefix.pch */,
+				2E1D8CCD171E9809004EE31F /* Default.png */,
+				2E1D8CCF171E9809004EE31F /* Default@2x.png */,
+				2E1D8CD1171E9809004EE31F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E3755A617337B54005FCEDF /* RModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E3755A717337B92005FCEDF /* YZZR_H_Model.h */,
+				2E3755A817337B92005FCEDF /* YZZR_H_Model.m */,
+			);
+			name = RModel;
+			sourceTree = "<group>";
+		};
+		2E48B1801724CC16009E9490 /* YZZUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB7AC17373C4C00FABEF0 /* YZZDataHelper.h */,
+				EC9BB7AD17373C4C00FABEF0 /* YZZDataHelper.m */,
+				EC9BB7AE17373C4C00FABEF0 /* YZZEngine.h */,
+				EC9BB7AF17373C4C00FABEF0 /* YZZEngine.m */,
+				2EAE04B7172263C600C60737 /* YZZUtil.h */,
+				2EAE04B8172263C600C60737 /* YZZUtil.m */,
+			);
+			name = YZZUtil;
+			sourceTree = "<group>";
+		};
+		2E48B1821724D900009E9490 /* ToolVC */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A3EE8172A8510001BE2D1 /* YZZMenuVC.h */,
+				2E3A3EE9172A8510001BE2D1 /* YZZMenuVC.m */,
+				2EDE40D2172F85F6002698FA /* YZZHotelDownloadVC.h */,
+				2EDE40D3172F85F6002698FA /* YZZHotelDownloadVC.m */,
+				2E1D8CD6171E9809004EE31F /* YZZHotelPubVC.h */,
+				2E1D8CD7171E9809004EE31F /* YZZHotelPubVC.m */,
+				ECA2160517382310007423EC /* YZZPlaneDataVC.h */,
+				ECA2160617382310007423EC /* YZZPlaneDataVC.m */,
+				ECA2160817382320007423EC /* YZZPlanePubVC.h */,
+				ECA2160917382320007423EC /* YZZPlanePubVC.m */,
+			);
+			name = ToolVC;
+			sourceTree = "<group>";
+		};
+		2E48B1831724D913009E9490 /* ToolkitVC */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8DEC41721A602001A99F1 /* YZZMd5VC.h */,
+				2EF8DEC51721A602001A99F1 /* YZZMd5VC.m */,
+			);
+			name = ToolkitVC;
+			sourceTree = "<group>";
+		};
+		2E8F77301723DCE0001B78BD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				2E48B1821724D900009E9490 /* ToolVC */,
+				2E48B1831724D913009E9490 /* ToolkitVC */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		2E8F77311723DCEE001B78BD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB78517373BA400FABEF0 /* MKNetworkKit */,
+				2E48B1801724CC16009E9490 /* YZZUtil */,
+				2E8F77361724153A001B78BD /* YZZDatabase */,
+				B2B8DFD31721B5D400366414 /* TouchXML */,
+				B2B8DF9D1721B03C00366414 /* Soap */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		2E8F77361724153A001B78BD /* YZZDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F77371724153A001B78BD /* YZZDatabase.h */,
+				2E8F77381724153A001B78BD /* YZZDatabase.m */,
+			);
+			path = YZZDatabase;
+			sourceTree = "<group>";
+		};
+		2E8F77401724C264001B78BD /* TestDrivenData */ = {
+			isa = PBXGroup;
+			children = (
+				2E22FA5D1725A8A10016C528 /* expo_bj_hotels.txt */,
+				2E22FA5E1725A8A10016C528 /* expo_cd_hotels.txt */,
+				2E22FA5F1725A8A10016C528 /* expo_gz_hotels.txt */,
+				2E22FA601725A8A10016C528 /* expo_sh_hotels.txt */,
+				2E22FA611725A8A10016C528 /* expo_sz_hotels.txt */,
+				2E8F77411724C278001B78BD /* OTA_HotelSearchRes_BEIJING.txt */,
+			);
+			name = TestDrivenData;
+			sourceTree = "<group>";
+		};
+		B2B8DF9D1721B03C00366414 /* Soap */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8DFEE1721BDB400366414 /* GTMNSString+HTML.h */,
+				B2B8DFEF1721BDB400366414 /* GTMNSString+HTML.m */,
+				B2B8DFF01721BDB400366414 /* NSString+HTML.h */,
+				B2B8DFF11721BDB400366414 /* NSString+HTML.m */,
+				B2B8DF9E1721B03C00366414 /* NSData+Base64.h */,
+				B2B8DF9F1721B03C00366414 /* NSData+Base64.m */,
+				B2B8DFA01721B03C00366414 /* NSMutableArray+Soap.h */,
+				B2B8DFA11721B03C00366414 /* NSMutableArray+Soap.m */,
+				B2B8DFA21721B03C00366414 /* Soap.h */,
+				B2B8DFA31721B03C00366414 /* Soap.m */,
+				B2B8DFA41721B03C00366414 /* SoapArray.h */,
+				B2B8DFA51721B03C00366414 /* SoapArray.m */,
+				B2B8DFA61721B03C00366414 /* SoapDelegate.h */,
+				B2B8DFA71721B03C00366414 /* SoapDictionary.h */,
+				B2B8DFA81721B03C00366414 /* SoapDictionary.m */,
+				B2B8DFA91721B03C00366414 /* SoapFault.h */,
+				B2B8DFAA1721B03C00366414 /* SoapFault.m */,
+				B2B8DFAB1721B03C00366414 /* SoapHandler.h */,
+				B2B8DFAC1721B03C00366414 /* SoapHandler.m */,
+				B2B8DFAD1721B03C00366414 /* SoapLiteral.h */,
+				B2B8DFAE1721B03C00366414 /* SoapLiteral.m */,
+				B2B8DFAF1721B03C00366414 /* SoapNil.h */,
+				B2B8DFB01721B03C00366414 /* SoapNil.m */,
+				B2B8DFB11721B03C00366414 /* SoapObject.h */,
+				B2B8DFB21721B03C00366414 /* SoapObject.m */,
+				B2B8DFB31721B03C00366414 /* SoapParameter.h */,
+				B2B8DFB41721B03C00366414 /* SoapParameter.m */,
+				B2B8DFB51721B03C00366414 /* SoapReachability.h */,
+				B2B8DFB61721B03C00366414 /* SoapReachability.m */,
+				B2B8DFB71721B03C00366414 /* SoapRequest.h */,
+				B2B8DFB81721B03C00366414 /* SoapRequest.m */,
+				B2B8DFB91721B03C00366414 /* SoapService.h */,
+				B2B8DFBA1721B03C00366414 /* SoapService.m */,
+			);
+			path = Soap;
+			sourceTree = "<group>";
+		};
+		B2B8DFC91721B07C00366414 /* Model_Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2E3755A617337B54005FCEDF /* RModel */,
+				2E8F77461724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.h */,
+				2E8F77471724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.m */,
+				2E8F77481724C4C0001B78BD /* OTA_HotelRatePlanSudzc.h */,
+				2E8F77491724C4C0001B78BD /* OTA_HotelRatePlanSudzc.m */,
+				2E8F774A1724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.h */,
+				2E8F774B1724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m */,
+				2E8F774C1724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.h */,
+				2E8F774D1724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.m */,
+				B2B8DFCA1721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.h */,
+				B2B8DFCB1721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.m */,
+				B2B8DFCC1721B07C00366414 /* OTA_HotelSearchSudzc.h */,
+				B2B8DFCD1721B07C00366414 /* OTA_HotelSearchSudzc.m */,
+				ECA2160B17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.h */,
+				ECA2160C17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.m */,
+				ECA2160D17382492007423EC /* OTA_FlightSearchSudzc.h */,
+				ECA2160E17382492007423EC /* OTA_FlightSearchSudzc.m */,
+				B2B8DFF417223A3400366414 /* OTA_PingOTA_Ping.h */,
+				B2B8DFF517223A3400366414 /* OTA_PingOTA_Ping.m */,
+				B2B8DFF617223A3400366414 /* OTA_PingSudzc.h */,
+				B2B8DFF717223A3400366414 /* OTA_PingSudzc.m */,
+				B2B8DFCE1721B07C00366414 /* Soap+Prefix.h */,
+				B2B8DFCF1721B07C00366414 /* Soap+Prefix.m */,
+			);
+			name = Model_Generated;
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		B2B8DFD31721B5D400366414 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				2E8F77521724C4E7001B78BD /* GDataXMLNode.h */,
+				2E8F77531724C4E7001B78BD /* GDataXMLNode.m */,
+				B2B8DFD41721B5D400366414 /* CXMLDocument.h */,
+				B2B8DFD51721B5D400366414 /* CXMLDocument.m */,
+				B2B8DFD61721B5D400366414 /* CXMLDocument_PrivateExtensions.h */,
+				B2B8DFD71721B5D400366414 /* CXMLDocument_PrivateExtensions.m */,
+				B2B8DFD81721B5D400366414 /* CXMLElement.h */,
+				B2B8DFD91721B5D400366414 /* CXMLElement.m */,
+				B2B8DFDA1721B5D400366414 /* CXMLNode.h */,
+				B2B8DFDB1721B5D400366414 /* CXMLNode.m */,
+				B2B8DFDC1721B5D400366414 /* CXMLNode_PrivateExtensions.h */,
+				B2B8DFDD1721B5D400366414 /* CXMLNode_PrivateExtensions.m */,
+				B2B8DFDE1721B5D400366414 /* CXMLNode_XPathExtensions.h */,
+				B2B8DFDF1721B5D400366414 /* CXMLNode_XPathExtensions.m */,
+				B2B8DFE01721B5D400366414 /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		EC9BB78517373BA400FABEF0 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB78617373BA400FABEF0 /* Categories */,
+				EC9BB79317373BA400FABEF0 /* JSONKit */,
+				EC9BB79717373BA400FABEF0 /* MKNetworkEngine.h */,
+				EC9BB79817373BA400FABEF0 /* MKNetworkEngine.m */,
+				EC9BB79917373BA400FABEF0 /* MKNetworkKit.h */,
+				EC9BB79A17373BA400FABEF0 /* MKNetworkOperation.h */,
+				EC9BB79B17373BA400FABEF0 /* MKNetworkOperation.m */,
+				EC9BB79C17373BA400FABEF0 /* Reachability */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		EC9BB78617373BA400FABEF0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB78717373BA400FABEF0 /* NSData+MKBase64.h */,
+				EC9BB78817373BA400FABEF0 /* NSData+MKBase64.m */,
+				EC9BB78917373BA400FABEF0 /* NSDate+RFC1123.h */,
+				EC9BB78A17373BA400FABEF0 /* NSDate+RFC1123.m */,
+				EC9BB78B17373BA400FABEF0 /* NSDictionary+RequestEncoding.h */,
+				EC9BB78C17373BA400FABEF0 /* NSDictionary+RequestEncoding.m */,
+				EC9BB78D17373BA400FABEF0 /* NSString+MKNetworkKitAdditions.h */,
+				EC9BB78E17373BA400FABEF0 /* NSString+MKNetworkKitAdditions.m */,
+				EC9BB78F17373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.h */,
+				EC9BB79017373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.m */,
+				EC9BB79117373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.h */,
+				EC9BB79217373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EC9BB79317373BA400FABEF0 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB79417373BA400FABEF0 /* JSONKit.h */,
+				EC9BB79517373BA400FABEF0 /* JSONKit.m */,
+				EC9BB79617373BA400FABEF0 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		EC9BB79C17373BA400FABEF0 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EC9BB79D17373BA400FABEF0 /* Reachability.h */,
+				EC9BB79E17373BA400FABEF0 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1D8CB7171E9809004EE31F /* expokit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1D8CDB171E9809004EE31F /* Build configuration list for PBXNativeTarget "expokit" */;
+			buildPhases = (
+				2E1D8CB4171E9809004EE31F /* Sources */,
+				2E1D8CB5171E9809004EE31F /* Frameworks */,
+				2E1D8CB6171E9809004EE31F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = expokit;
+			productName = exotrip;
+			productReference = 2E48889F174CECA800135517 /* expokit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E1D8CB0171E9809004EE31F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YZZ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = YzzApp.com;
+			};
+			buildConfigurationList = 2E1D8CB3171E9809004EE31F /* Build configuration list for PBXProject "expokit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E1D8CAF171E9809004EE31F;
+			productRefGroup = 2E1D8CAF171E9809004EE31F;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1D8CB7171E9809004EE31F /* expokit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E1D8CB6171E9809004EE31F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1D8CC6171E9809004EE31F /* InfoPlist.strings in Resources */,
+				2E1D8CCE171E9809004EE31F /* Default.png in Resources */,
+				2E1D8CD0171E9809004EE31F /* Default@2x.png in Resources */,
+				2E1D8CD2171E9809004EE31F /* Default-568h@2x.png in Resources */,
+				2E1D8CD5171E9809004EE31F /* MainStoryboard.storyboard in Resources */,
+				2E8F773D17242AC4001B78BD /* expo2013.sqlite3 in Resources */,
+				2E8F77421724C278001B78BD /* OTA_HotelSearchRes_BEIJING.txt in Resources */,
+				2E22FA621725A8A10016C528 /* expo_bj_hotels.txt in Resources */,
+				2E22FA631725A8A10016C528 /* expo_cd_hotels.txt in Resources */,
+				2E22FA641725A8A10016C528 /* expo_gz_hotels.txt in Resources */,
+				2E22FA651725A8A10016C528 /* expo_sh_hotels.txt in Resources */,
+				2E22FA661725A8A10016C528 /* expo_sz_hotels.txt in Resources */,
+				2E3A3EEC172A90BC001BE2D1 /* extrip57.png in Resources */,
+				2E3A3EEE172A90C1001BE2D1 /* extrip114.png in Resources */,
+				EC9BB7A617373BA400FABEF0 /* README.md in Resources */,
+				EC2D30E01739459100F7B082 /* city_location.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E1D8CB4171E9809004EE31F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1D8CC8171E9809004EE31F /* main.m in Sources */,
+				2E1D8CCC171E9809004EE31F /* YZZAppDelegate.m in Sources */,
+				2E1D8CD8171E9809004EE31F /* YZZHotelPubVC.m in Sources */,
+				2EF8DEC61721A602001A99F1 /* YZZMd5VC.m in Sources */,
+				B2B8DFBB1721B03C00366414 /* NSData+Base64.m in Sources */,
+				B2B8DFBC1721B03C00366414 /* NSMutableArray+Soap.m in Sources */,
+				B2B8DFBD1721B03C00366414 /* Soap.m in Sources */,
+				B2B8DFBE1721B03C00366414 /* SoapArray.m in Sources */,
+				B2B8DFBF1721B03C00366414 /* SoapDictionary.m in Sources */,
+				B2B8DFC01721B03C00366414 /* SoapFault.m in Sources */,
+				B2B8DFC11721B03C00366414 /* SoapHandler.m in Sources */,
+				B2B8DFC21721B03C00366414 /* SoapLiteral.m in Sources */,
+				B2B8DFC31721B03C00366414 /* SoapNil.m in Sources */,
+				B2B8DFC41721B03C00366414 /* SoapObject.m in Sources */,
+				B2B8DFC51721B03C00366414 /* SoapParameter.m in Sources */,
+				B2B8DFC61721B03C00366414 /* SoapReachability.m in Sources */,
+				B2B8DFC71721B03C00366414 /* SoapRequest.m in Sources */,
+				B2B8DFC81721B03C00366414 /* SoapService.m in Sources */,
+				B2B8DFD01721B07C00366414 /* OTA_HotelSearchOTA_HotelSearch.m in Sources */,
+				B2B8DFD11721B07C00366414 /* OTA_HotelSearchSudzc.m in Sources */,
+				B2B8DFD21721B07C00366414 /* Soap+Prefix.m in Sources */,
+				B2B8DFE11721B5D400366414 /* CXMLDocument.m in Sources */,
+				B2B8DFE21721B5D400366414 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				B2B8DFE31721B5D400366414 /* CXMLElement.m in Sources */,
+				B2B8DFE41721B5D400366414 /* CXMLNode.m in Sources */,
+				B2B8DFE51721B5D400366414 /* CXMLNode_PrivateExtensions.m in Sources */,
+				B2B8DFE61721B5D400366414 /* CXMLNode_XPathExtensions.m in Sources */,
+				B2B8DFF21721BDB400366414 /* GTMNSString+HTML.m in Sources */,
+				B2B8DFF31721BDB400366414 /* NSString+HTML.m in Sources */,
+				B2B8DFF817223A3400366414 /* OTA_PingOTA_Ping.m in Sources */,
+				B2B8DFF917223A3400366414 /* OTA_PingSudzc.m in Sources */,
+				2EAE04B9172263C600C60737 /* YZZUtil.m in Sources */,
+				2E8F77391724153A001B78BD /* YZZDatabase.m in Sources */,
+				2E8F774E1724C4C0001B78BD /* OTA_HotelRatePlanOTA_HotelRatePlan.m in Sources */,
+				2E8F774F1724C4C0001B78BD /* OTA_HotelRatePlanSudzc.m in Sources */,
+				2E8F77501724C4C0001B78BD /* OTA_HotelDescriptiveInfoOTA_HotelDescriptiveInfo.m in Sources */,
+				2E8F77511724C4C0001B78BD /* OTA_HotelDescriptiveInfoSudzc.m in Sources */,
+				2E8F77541724C4E7001B78BD /* GDataXMLNode.m in Sources */,
+				2E3A3EEA172A8510001BE2D1 /* YZZMenuVC.m in Sources */,
+				2EDE40D4172F85F6002698FA /* YZZHotelDownloadVC.m in Sources */,
+				2E3755A917337B92005FCEDF /* YZZR_H_Model.m in Sources */,
+				EC9BB79F17373BA400FABEF0 /* NSData+MKBase64.m in Sources */,
+				EC9BB7A017373BA400FABEF0 /* NSDate+RFC1123.m in Sources */,
+				EC9BB7A117373BA400FABEF0 /* NSDictionary+RequestEncoding.m in Sources */,
+				EC9BB7A217373BA400FABEF0 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				EC9BB7A317373BA400FABEF0 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				EC9BB7A417373BA400FABEF0 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				EC9BB7A517373BA400FABEF0 /* JSONKit.m in Sources */,
+				EC9BB7A717373BA400FABEF0 /* MKNetworkEngine.m in Sources */,
+				EC9BB7A817373BA400FABEF0 /* MKNetworkOperation.m in Sources */,
+				EC9BB7A917373BA400FABEF0 /* Reachability.m in Sources */,
+				EC9BB7B017373C4C00FABEF0 /* YZZDataHelper.m in Sources */,
+				EC9BB7B117373C4C00FABEF0 /* YZZEngine.m in Sources */,
+				ECA2160717382310007423EC /* YZZPlaneDataVC.m in Sources */,
+				ECA2160A17382320007423EC /* YZZPlanePubVC.m in Sources */,
+				ECA2160F17382492007423EC /* OTA_FlightSearchOTA_FlightSearch.m in Sources */,
+				ECA2161017382492007423EC /* OTA_FlightSearchSudzc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E1D8CC4171E9809004EE31F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1D8CC5171E9809004EE31F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E1D8CD3171E9809004EE31F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1D8CD4171E9809004EE31F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E1D8CD9171E9809004EE31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E1D8CDA171E9809004EE31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E1D8CDC171E9809004EE31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "exotrip/expokit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "exotrip/expokit-Info.plist";
+				PRODUCT_NAME = expokit;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E1D8CDD171E9809004EE31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "exotrip/expokit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "exotrip/expokit-Info.plist";
+				PRODUCT_NAME = expokit;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E1D8CB3171E9809004EE31F /* Build configuration list for PBXProject "expokit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1D8CD9171E9809004EE31F /* Debug */,
+				2E1D8CDA171E9809004EE31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1D8CDB171E9809004EE31F /* Build configuration list for PBXNativeTarget "expokit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1D8CDC171E9809004EE31F /* Debug */,
+				2E1D8CDD171E9809004EE31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E1D8CB0171E9809004EE31F /* Project object */;
+}
